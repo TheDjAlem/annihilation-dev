@@ -1,19 +1,31 @@
-<DOCTYPE! html>
-  <head>
-    <title>Annihilation - Staff</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
-    </style>
-  </head>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Annihilation - Staff</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  </style>
+</head>
+<body>
+  <div class="LoginFrame">
+    <p class="title">LOGIN</p>
+    <button class="discordLogin" onclick="loginWithDiscord()">Continue with Discord</button>
+  </div>
 
-  <body>
-    <div class="LoginFrame">
-      <p class="title">
-        LOGIN
-      </p>
-      <button class="discordLogin">
-        Continue with Discord
-      </button>
-    </div>
-  </body>
+  <script>
+    function loginWithDiscord() {
+      window.location.href = "https://discord.com/oauth2/authorize?client_id=1206703399618482306&redirect_uri=https%3A%2F%2Fthedjalem.github.io%2Fannihilation-dev%2Fcallback&response_type=token&scope=identify";
+    }
+  </script>
+
+  <script>
+    // Check if the current URL contains the callback URL
+    if (window.location.href.includes("callback")) {
+      // Redirect to the dashboard page
+      window.location.href = "/dashboard/";
+    }
+  </script>
+
+</body>
+</html>
