@@ -1,0 +1,47 @@
+body {
+  background-image: url("https://fileshare.alemdev.org/Capture.PNG");
+  background-size: cover;
+}
+
+.LoginFrame {
+  background-color: rgba(0, 0, 0, .4);
+  width: 500px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(255, 196, 0, 0.7);
+  text-align: center;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.discordLogin {
+  height: 30px;
+  width: 200px;
+  position: relative;
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: rgba(114, 137, 218);
+  border-style: solid;
+  border-color: rgba(140, 150, 260);
+  color: white;
+  border-width: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+}
