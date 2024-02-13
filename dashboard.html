@@ -1,0 +1,11 @@
+// In callback.html
+<script>
+  // Check if the current URL contains the access token
+  if (window.location.hash) {
+    // Extract the access token from the URL
+    var accessToken = window.location.hash.substring(1).split("&")[0].split("=")[1];
+    
+    // Redirect to the dashboard page
+    window.location.href = "dashboard.html";
+  }
+</script>
