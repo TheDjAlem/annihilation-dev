@@ -6,11 +6,11 @@ body {
 .LoginFrame {
   background-color: rgba(0, 0, 0, .4);
   width: 500px;
-  height: 100px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 250px;
-  margin-bottom: 30px;
+  margin-bottom: auto;
   border: 2px;
   border-style: solid;
   border-color: rgba(255, 196, 0, 0.7);
