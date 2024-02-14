@@ -6,19 +6,18 @@
 <body>
   <h1>Logging you in...</h1>
 
-  <script>
-    // Check if the current URL contains the access token
-    if (window.location.hash) {
-      // Extract the access token from the URL
-      var accessToken = window.location.hash.substring(1).split("&")[0].split("=")[1];
-      
-      // You can now store the access token in local storage or a cookie
-      // For example:
-      localStorage.setItem('accessToken', accessToken);
+<script>
+  // Check if the current URL contains the access token
+  if (window.location.hash) {
+    // Extract the access token from the URL
+    var accessToken = window.location.hash.substring(1).split("&")[0].split("=")[1];
+    
+    // Store the access token in local storage
+    localStorage.setItem('accessToken', accessToken);
 
-      // Redirect to the dashboard page
-      window.location.href = "dashboard.html";
-    }
-  </script>
+    // Redirect to the dashboard page
+    window.location.href = "dashboard.html";
+  }
+</script>
 </body>
 </html>
