@@ -21,9 +21,13 @@
       })
       .then(response => {
         if (!response.ok) {
-          throw new Error('Invalid access token');
+          throw new Error('Invalid response from Discord API');
         }
-        // Token is valid, do nothing
+        return response.json();
+      })
+      .then(data => {
+        console.log('Discord user data:', data);
+        // User is authenticated, do nothing
       })
       .catch(error => {
         console.error('Token validation error:', error);
